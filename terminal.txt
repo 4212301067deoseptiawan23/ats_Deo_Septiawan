@@ -1,0 +1,51 @@
+terminal 
+PS C:\PBL DEONG\uts machine vision> & "C:/PBL DEONG/uts machine vision/.venv/Scripts/Activate.ps1"
+(.venv) PS C:\PBL DEONG\uts machine vision> & "C:/PBL DEONG/uts machine vision/.venv/Scripts/python.exe" "c:/PBL DEONG/uts machine vision/main.py"
+Traceback (most recent call last):
+  File "c:\PBL DEONG\uts machine vision\main.py", line 192, in <module>
+    if _name_ == "_main_":
+       ^^^^^^
+NameError: name '_name_' is not defined. Did you mean: '__name__'?
+(.venv) PS C:\PBL DEONG\uts machine vision> & "C:/PBL DEONG/uts machine vision/.venv/Scripts/python.exe" "c:/PBL DEONG/uts machine vision/main.py"
+=======================================================
+Program Klasifikasi EMNIST Dimulai pada Fri Oct 31 09:37:32 2025
+Log Output: C:\PBL DEONG\uts machine vision\output\evaluation_log.txt
+=======================================================
+Memuat dan melakukan sampling data seimbang...
+Total sampel final: 13000 (26 kelas)
+
+---------- FASE 2: EVALUASI LOOCV FINAL ----------
+
+[HOG] Ekstraksi fitur: Orient=9, PPC=(8, 8), CPB=(2, 2)...
+Ekstraksi HOG: 100%|██████████████████████████████████████████████████████████████| 13000/13000 [00:03<00:00, 3541.32it/s] 
+Dimensi fitur HOG: (13000, 144)
+
+[LOOCV] Memulai LOOCV FINAL (Kernel=linear, C=10.0)...
+PERINGATAN: LOOCV pada 13000 sampel akan memakan waktu LAMA (jam/hari).
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  34 tasks      | elapsed:  1.1min
+[Parallel(n_jobs=-1)]: Done 184 tasks      | elapsed:  5.1min
+[Parallel(n_jobs=-1)]: Done 434 tasks      | elapsed: 11.7min
+[Parallel(n_jobs=-1)]: Done 784 tasks      | elapsed: 21.0min
+[Parallel(n_jobs=-1)]: Done 1234 tasks      | elapsed: 32.9min
+[Parallel(n_jobs=-1)]: Done 1784 tasks      | elapsed: 47.5min
+[Parallel(n_jobs=-1)]: Done 2434 tasks      | elapsed: 64.7min
+[Parallel(n_jobs=-1)]: Done 3184 tasks      | elapsed: 84.6min
+[Parallel(n_jobs=-1)]: Done 4034 tasks      | elapsed: 107.3min
+[Parallel(n_jobs=-1)]: Done 4984 tasks      | elapsed: 132.6min
+[Parallel(n_jobs=-1)]: Done 6034 tasks      | elapsed: 160.5min
+[Parallel(n_jobs=-1)]: Done 7184 tasks      | elapsed: 191.2min
+[Parallel(n_jobs=-1)]: Done 8434 tasks      | elapsed: 224.5min
+[Parallel(n_jobs=-1)]: Done 9784 tasks      | elapsed: 261.0min
+[Parallel(n_jobs=-1)]: Done 11234 tasks      | elapsed: 299.8min
+[Parallel(n_jobs=-1)]: Done 12784 tasks      | elapsed: 341.2min
+[Parallel(n_jobs=-1)]: Done 13000 out of 13000 | elapsed: 346.9min finished
+
+--- Hasil Metrik Evaluasi LOOCV FINAL ---
+Waktu komputasi total LOOCV: 5.78 jam
+Akurasi LOOCV: 82.16%
+
+[VISUALISASI] Confusion Matrix disimpan ke: C:\PBL DEONG\uts machine vision\output\confusion_matrix_hog_svm_linear.png     
+
+--- EKSEKUSI PROGRAM SELESAI ---
+(.venv) PS C:\PBL DEONG\uts machine vision>
