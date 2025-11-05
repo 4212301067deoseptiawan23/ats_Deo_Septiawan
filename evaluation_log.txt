@@ -1,0 +1,22 @@
+=======================================================
+Program Klasifikasi EMNIST Dimulai pada Fri Oct 31 09:37:32 2025
+Log Output: C:\PBL DEONG\uts machine vision\output\evaluation_log.txt
+=======================================================
+Memuat dan melakukan sampling data seimbang...
+Total sampel final: 13000 (26 kelas)
+
+---------- FASE 2: EVALUASI LOOCV FINAL ----------
+
+[HOG] Ekstraksi fitur: Orient=9, PPC=(8, 8), CPB=(2, 2)...
+Dimensi fitur HOG: (13000, 144)
+
+[LOOCV] Memulai LOOCV FINAL (Kernel=linear, C=10.0)...
+PERINGATAN: LOOCV pada 13000 sampel akan memakan waktu LAMA (jam/hari).
+
+--- Hasil Metrik Evaluasi LOOCV FINAL ---
+Waktu komputasi total LOOCV: 5.78 jam
+Akurasi LOOCV: 82.16%
+
+[VISUALISASI] Confusion Matrix disimpan ke: C:\PBL DEONG\uts machine vision\output\confusion_matrix_hog_svm_linear.png
+
+--- EKSEKUSI PROGRAM SELESAI ---
